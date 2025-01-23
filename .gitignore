@@ -1,2 +1,6 @@
+#ignore the virtual environment
 har-analyzer-env/
+
+#ignore the uploads folder except .gitkeep
 uploads/
+!uploads/.gitkeep
