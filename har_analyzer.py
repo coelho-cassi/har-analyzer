@@ -12,7 +12,7 @@ if not os.path.exists(UPLOAD_FOLDER):
 
 # Function to parse HAR file and extract relevant data
 def parse_har(file_path):
-    with open(file_path, 'r') as f:
+    with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
         har_data = json.load(f)
 
     parser = HarParser(har_data)
