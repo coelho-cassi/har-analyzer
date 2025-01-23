@@ -7,14 +7,18 @@
     <style>
       body {
         background: linear-gradient(to bottom right, #6dd5ed, #2193b0);
+        /* Gradient background */
         font-family: Arial, sans-serif;
-        color: #fff;
+        color: #333;
         text-align: center;
         padding: 50px;
       }
+
       h1 {
         color: #280b0b;
+        /* Header color */
       }
+
       form {
         margin-top: 20px;
         display: inline-block;
@@ -30,6 +34,7 @@
       button {
         padding: 10px 15px;
         background-color: #0056b3;
+        /* Button color */
         color: white;
         border: none;
         border-radius: 5px;
@@ -38,23 +43,27 @@
 
       button:hover {
         background-color: #004494;
+        /* Button hover color */
       }
 
       footer {
         margin-top: 30px;
         color: #280b0b;
+        /* Footer text color */
       }
     </style>
   </head>
+
   <body>
     <h1>Welcome to the HAR Analyzer</h1>
     <form action="/analyze" method="POST" enctype="multipart/form-data">
-      <input type="file" name="file" accept=".har" />
+      <input type="file" name="har_file" required />
       <br />
       <button type="submit">Analyze HAR File</button>
     </form>
+
     <footer>
-      <p>Created By Cassi with NCF</p>
+      <p>Created By Cassi with NCF, January 2025</p>
     </footer>
   </body>
 </html>
